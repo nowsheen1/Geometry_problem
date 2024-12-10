@@ -217,5 +217,7 @@ end
 
 z2=[xopt];
 save('optimal_solution_sub_2.mat', 'z2');
+save('weight_sub_2.mat', 'weight_2');
+save('center_sub_2.mat', 'center_2');
 end
 

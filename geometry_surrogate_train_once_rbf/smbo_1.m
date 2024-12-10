@@ -1,9 +1,9 @@
-
+                                                                                                                                                                                                                                                                                            
 
 
 %% PREPARATION
 function [z]=smbo_1() 
-global weight center;
+
 rng(100);
 
 % User parameter
@@ -11,7 +11,7 @@ export_plot = false;        % Export plot file
 visualization_on = true;    % Set to true to turn on visualization 
 
 % Surrogate model-based optimization options
-maxiter = 70;               % Maximum number of iterations allowed
+maxiter =70;               % Maximum number of iterations allowed
 n_smp = 40;                  % Number of samples for each iteration
 m.sampling = 'LHS';         % Sampling method: LHS, FF, Random, User
 m.surrogate = 'TPS-RBF';    % Surrogate modeling method: TPS-RBF, User
@@ -203,5 +203,7 @@ end
 
 z1=[xopt];
 save('optimal_solution_sub_1.mat', 'z1');
+save('weight_sub_1.mat', 'weight');
+save('center_sub_1.mat', 'center');
 end
 
