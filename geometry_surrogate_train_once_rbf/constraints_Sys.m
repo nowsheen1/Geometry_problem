@@ -1,9 +1,16 @@
 function[c,ceq]= constraints_Sys(x)
 %newData = [x(1),x(2)];
-global weight center weight_2 center_2;
+
 
 load('optimal_solution_sub_1.mat', 'z1');
 load('optimal_solution_sub_2.mat', 'z2');
+
+load('weight_sub_1.mat', 'weight');
+load('center_sub_1.mat', 'center');
+
+load('weight_sub_2.mat', 'weight_2');
+load('center_sub_2.mat', 'center_2');
+
 sub_system_1_output=z1;
 sub_system_2_output=z2;
 
